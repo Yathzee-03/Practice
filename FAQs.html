@@ -1,16 +1,88 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
     <title>FAQs</title>
-<style>
-    a {
-        font-size: 80px;
-        color: black;
-    }
-</style>
+    
+    <style>
+        h1, p {
+            font-family: sans-serif;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        p {
+            font-size: 20px;
+        }
+
+        a { 
+        border-radius: 6px;
+        }
+
+        .response a:hover, a:active {
+        background: #4b4545d0;
+        transition: color 0.5s fade-in;
+        transform: scale(1.05);
+        }
+    </style>
 </head>
-<body>
-    <a href="Landing Page.html" >&#8249;</a>
+<body >
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
+        <div class="container-fluid">
+            <a href="Landing Page.html" class="navbar-brand mb-0 h1" target="_parent">CCC Lost and Found</a>
+            <div class="response navbar-nav ml auto">
+                <a href="Missing Items.html" class="nav-item nav-link" target="_self">Missing Items</a>
+                <a href="Report Lost Item.html" class="nav-item nav-link" target="_self">Report Lost Items</a>
+                <a href="Surrendered Items.html" class="nav-item nav-link" target="_self">Surrendered Items</a>
+                <a href="FAQs.html" class="nav-item nav-link active" target="_self">FAQs</a>
+            </div>
+        </div>
+    </nav>
+    <h1>Frequently Answered Questions</h1>
+    <div class="container justify-content-center" style="width: 50%;">  
+        <p>
+            <a data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Where should I surrender the missing items?
+            </a>
+            <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapseExample">
+                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                    <image href="caret-down-fill.svg" height="16" width="16" />
+                </svg>
+            </button>
+        </p>
+        <div class="collapse" id="collapse1" style="margin-top: -16px;">
+            <div class="card card-body" style="font-size: 19px;">
+                In collaboration with the officials, you can surrender it to them. After that, fill up
+                the form or just let the officials answer it.
+            </div>
+        </div>
+    </div>
+    
+    <div class="container justify-content-center" style="width: 50%;">  
+        <p>
+            <a data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Where should I claim a missing item?
+            </a>
+            <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseExample">
+                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                    <image href="caret-down-fill.svg" height="16" width="16" />
+                </svg>
+            </button>
+        </p>
+        <div class="collapse" id="collapse2" style="margin-top: -16px;">
+            <div class="card card-body" style="font-size: 19px;">
+                Fill up the form first and choose the radio buttom claim item. It is done so to verify first whether you are the owner of the said item.
+                After verification, you will be contacted by the officials.
+            </div>
+        </div>
+    </div>
 </body>
 </html>
