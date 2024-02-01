@@ -3,68 +3,24 @@
     <meta charset="utf-8">
     <title>Missing Items</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        h1, h2, p {
-            font-family: sans-serif;
-        }
-
-        .center {
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-            justify-content: center;
-        }
-
-        .contain {
-            width: 70%;
-        }
-        img{
-            float: left;
-            margin-right: 15px;
-            border: 3px solid;
-            border-radius: 8px;
-        }
-
-        img:hover {
-            transform: scale(1.03);
-        }
-
-        p {
-            text-align: left;
-            margin-top: 2px;
-            margin-bottom: 2px;
-        }
-
-        button {
-            margin-top: 15px;
-        }
-
-        a { 
-        border-radius: 6px;
-        }
-
-        .response a:hover, a:active {
-        background: #4b4545d0;
-        transition: color 0.5s fade-in;
-        transform: scale(1.05);
-        }
-    </style>
+    <link rel="stylesheet" href="css/missing-items.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
         <div class="container-fluid">
-            <a href="Landing Page.html" class="navbar-brand mb-0 h1" target="_parent">CCC Lost and Found</a>
+            <a href="Landing Page.html" class="navbar-brand mb-0 h1" target="_parent">FindIt Iskolar</a>
             <div class="response navbar-nav ml auto">
-                <a href="Missing Items.html" class="nav-item nav-link active" target="_self">Missing Items</a>
-                <a href="Report Lost Item.html" class="nav-item nav-link" target="_self">Report Lost Items</a>
+                <a href="Missing Items.html" class="nav-item nav-link" target="_self">Missing Items</a>
                 <a href="Surrendered Items.html" class="nav-item nav-link" target="_self">Surrendered Items</a>
-                <a href="FAQs.html" class="nav-item nav-link" target="_self">FAQs</a>
+                <a href="Report Lost Item.html" class="nav-item nav-link" target="_self">Report Lost Item</a>
+                <a href="Surrender Missing Item.html" class="nav-item nav-link" target="_self">Surrender Missing Item</a>
+                <a href="FAQs.html" class="nav-item nav-link" target="_self">About</a>
             </div>
         </div>
     </nav>
     <div><center>
         <div class="input-group mb-3" style="width: 60%;">
-            <span class="input-group-text"><svg src="search.svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <span class="input-group-text"><svg src="item-pictures/search.svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
               </svg>
             </span>
@@ -72,47 +28,62 @@
         </div>
         </center>
     </div>
-    <center><h1>Missing Items</h1></center><br><br>
-    <div class="contain center" style="display: flex; justify-content: center; align-items: center;" >
-        <img src="item-pictures/cellphone1.jpg" alt="" height="200px">
-        <div>
-            <h2>Information</h2>
-            <p>Cellphone</p>
-            <p>Date lost: Jan. 9, 2024</p>
-            <p>Location lost: CCC Admin Building</p>
-            <p>Other description: The cellphone's brand is Realme</p>
+    <h1>Missing Items</h1><br><br>
+    <div class="container">
+        <div class="mitem-container">
+            <div class="image-wrapper">
+                <img src="item-pictures/cellphone1.jpg" alt="">
+            </div>
+            
+            <div class="container-p">
+                <div class="container-innerp">
+                    <h2>Information</h2>
+                    <p>Cellphone</p>
+                    <p>Date lost: Jan. 9, 2024</p>
+                    <p>Location lost: CCC Admin Building</p>
+                    <p>Other description: The cellphone's brand is Realme</p>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="gap-2 d-md-flex justify-content-center">
-        <button type="button" class="btn btn-info">Return Item</button>
-    </div>
-    <br><br>
-    <div class="contain center" style="display: flex; justify-content: center; align-items: center;" >
-        <img src="item-pictures/id1.jpg" alt="" height="200px">
-        <div>
-            <h2>Information</h2>
-            <p>Student ID</p>
-            <p>Date lost: Jan. 10, 2024</p>
-            <p>Location lost: CCC Admin Building</p>
-            <p>Other description: 2nd Year ComSci Student</p>
+        <div class="gap-2 d-md-flex justify-content-center">
+            <button type="button" class="btn btn-info">Return Item</button>
         </div>
-    </div>
-    <div class="gap-2 d-md-flex justify-content-center">
-        <button type="button" class="btn btn-info">Return Item</button>
-    </div>
-    <br><br>
-    <div class="contain center" style="display: flex; justify-content: center; align-items: center;" >
-        <img src="item-pictures/wallet1.jpg" alt="" height="200px">
-        <div>
-            <h2>Information</h2>
-            <p>Wallet</p>
-            <p>Date lost: Jan. 17, 2024</p>
-            <p>Location lost: CCC JMC Building</p>
-            <p>Other description: Contains flashdrive and cash not more than 500</p>
+        <br><br>
+        <div class="mitem-container">
+            <div class="image-wrapper">
+                <img src="item-pictures/id1.jpg" alt="">
+            </div>
+            <div class="container-p">
+                <div class="container-innerp">
+                    <h2>Information</h2>
+                    <p>Student ID</p>
+                    <p>Date lost: Jan. 10, 2024</p>
+                    <p>Location lost: CCC Admin Building</p>
+                    <p>Other description: 2nd Year ComSci Student</p>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="gap-2 d-md-flex justify-content-center">
-        <button type="button" class="btn btn-info">Return Item</button>
+        <div class="gap-2 d-md-flex justify-content-center">
+            <button type="button" class="btn btn-info">Return Item</button>
+        </div>
+        <br><br>
+        <div class="mitem-container center">
+            <div class="image-wrapper">
+                <img src="item-pictures/wallet1.jpg" alt="">
+            </div>
+            <div class="container-p">
+                <div class="container-innerp">
+                    <h2>Information</h2>
+                    <p>Wallet</p>
+                    <p>Date lost: Jan. 17, 2024</p>
+                    <p>Location lost: CCC JMC Building</p>
+                    <p>Other description: Contains flashdrive and cash not more than 500</p>
+                </div>
+            </div>
+        </div>
+        <div class="gap-2 d-md-flex justify-content-center">
+            <button type="button" class="btn btn-info">Return Item</button>
+        </div>
     </div>
 </body>
 </html>

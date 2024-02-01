@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/item-form.css">
+    <title>Surrender Missing Item</title>
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
+        <div class="container-fluid">
+          <a href="Landing Page.html" class="navbar-brand mb-0 h1" target="_parent">FindIt Iskolar</a>
+            <div class="response navbar-nav ml auto">
+              <a href="Missing Items.html" class="nav-item nav-link" target="_self">Missing Items</a>
+              <a href="Surrendered Items.html" class="nav-item nav-link" target="_self">Surrendered Items</a>
+              <a href="Report Lost Item.html" class="nav-item nav-link" target="_self">Report Lost Item</a>
+              <a href="Surrender Missing Item.html" class="nav-item nav-link" target="_self">Surrender Missing Item</a>
+              <a href="FAQs.html" class="nav-item nav-link" target="_self">About</a>
+            </div>
+        </div>
+    </nav>
+    
+    <form action="">
+        <h2>Surrender Item Form</h2>
+        <p>Fill out the fields with correct information</p>
+        <fieldset>
+            <label for="">Item:
+                <input type="text" id="surrender-item" name="surrender-item" required >  
+            </label>
+            <label for="">Date Found
+                <input type="date" id="surrender-date" name="surrender-date" value="" required>
+            </label>
+            <label for="">Place where item is found:
+                <input type="text" id="surrender-place" name="surrender-place" required>
+            </label>
+            <label for="">Other description for the item (Optional):
+                <textarea name="surrender-description" id="surrender-description" cols="30" rows="3" placeholder="Other description"></textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <div class="container">
+                <div id="container-1">
+                    <label for="name">Name:
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </label>
+                </div>
+                <div id="container-2">
+                    <label for="contact-details">Contact Number | Email
+                        <input type="text" id="contact-details" name="contact-details" placeholder="Contact Details" required>
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <label for="">Item's Picture
+                <input class="form-control form-control-sm" id="formFileSm" type="file">
+            </label>
+        </fieldset>
+        <div class="gap-2 d-md-flex justify-content-md-end ">
+            <a href="#"><button type="button" class="btn btn-success">Submit</button></a>
+        </div>
+    </form>
+    
+</body>
+</html>
