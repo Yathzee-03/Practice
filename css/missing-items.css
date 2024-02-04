@@ -1,5 +1,18 @@
+body {
+    background-color: black;
+}
+
+.text-white {
+    color: white;
+}
+
+.bg-blue{
+    background-color: blue;
+}
+
 h1, h2, p {
     font-family: sans-serif;
+    color: white;
 }
 
 h1 {
@@ -7,10 +20,11 @@ h1 {
 }
 
 .container {
-    border: 1px solid black;
+    border: 5px solid lightblue;
     display: flex;
     flex-direction: column;
     width: 40%;
+    padding: 10px 10px
 }
 
 .mitem-container {
@@ -31,6 +45,7 @@ h1 {
 .image-wrapper img{
     height: 200px;
     width: 200px;
+    border: 2px solid lightblue
 }
 
 img{

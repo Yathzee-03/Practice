@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+}
+
+.bg-blue{
+    background-color: blue;
+}
+
+h1, p {
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+p {
+    font-size: 20px;
+}
+
+a { 
+border-radius: 6px;
+}
+
+.response a:hover, .response a:active {
+background: #4b4545d0;
+transition: color 0.5s fade-in;
+transform: scale(1.05);
+}
