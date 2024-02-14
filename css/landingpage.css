@@ -1,9 +1,16 @@
-body {
-    background-color: black;
+*{
+	box-sizing: border-box;
+}
+body{
+    background-image: url('paper.png');
 }
 
-.bg-blue{
-    background-color: blue;
+
+h1 {
+    text-align: center;
+}
+.bg-green{
+    background-color: #00A86b;
 }
 
 .strong {
@@ -46,8 +53,24 @@ section {
     justify-content: center;
     align-items: center;
     gap: 3em;
+    border-radius: 8px;
 }
 
+/* Feature image container */
+
+.features {
+    width: 35%;
+    background-color: rgb(185, 238, 241);
+    padding: 8px 20px;
+    float: left;
+    transition: color 0.3, fade-in;
+    border: 1px solid #f2f2f2;
+}
+.features-img-wrapper img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 .container-s {
     border: 1px solid black;
     width: 500px;
@@ -69,11 +92,18 @@ section {
     border-radius: 10px;
     padding: 15px;
 }
+/* After features*/
+.text-decor {
+  color:#00a86b;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  font-family: sans-serif;
+}
 
 .container-msg {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    gap: 15px;
 }
 
 .color-containerl{
@@ -88,14 +118,7 @@ image{
     max-width: 100%;
 }
 
-.features {
-    width: 35%;
-    background-color: rgb(185, 238, 241);
-    padding: 8px 20px;
-    float: left;
-    transition: color 0.3, fade-in;
-    border: 1px solid black;
-}
+
 
 .light-blue {
     background-color: rgb(185, 238, 241);
@@ -128,9 +151,65 @@ image{
     transition: color 0.5s fade-in;
     transform: scale(1.05);
   }
+/* Form preview CSS */
 
+.container-form{
+    width: 100%;
+    display: flex;
+
+}
+
+.form-item-1, .form-item-2 {
+    width: 50%;
+    padding-left: 9px;
+}
+
+
+
+.form-item-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+    margin: 5px 0;
+}
+
+.item-color {
+    background-color: burlywood;
+    width: 90%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    padding: 14px 0;
+}
+
+.item-icon {
+    width: 10%;
+    background-color: #8b7878;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.icon-wrapper img{
+    width: 40px;
+    height: 40px;
+}
+
+.item-description {
+    width: 80%;
+    background-color: #8b7878;
+    font-family: tahoma;
+    font-size: 20px;
+    padding: 14px 0;
+}
+
+/* Footer */
 footer {
-    background-color: blue;
+    background-color: #00a86b;
     padding: 25px 15px;
     margin-top: 25px;
 }
@@ -142,6 +221,7 @@ footer {
 .footer-item-1 {
     width: 50%;
 }
+
 
 .footer-item-2 {
     width: 50%;
@@ -167,4 +247,51 @@ footer a{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.descriptionss{
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .container-l{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 8px 0;
+    }
+    .features{
+        width: 95%;
+        border-radius: 8px;
+    }
+    .features p{
+        font-size: medium;
+    }
+
+    .descriptionss p{
+        text-align: justify;
+    }
+
+    .container-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-msg{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-item-1, .form-item-2{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
 

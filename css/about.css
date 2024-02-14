@@ -1,0 +1,54 @@
+* {
+  font-family: sans-serif;
+}
+
+.bg-green{
+  background-color: #00A86b;
+}
+
+
+h1, h2 {
+  color:#00a86b;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+h1, h2, form {
+  text-align: center;
+  margin: 0 auto;
+}
+
+p {
+  margin: 20px 0;
+}
+
+.center a:first-child{
+  font-size: 35px;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Text container */
+.container-txt {
+  width: 80vw;
+  margin: 0 auto;
+  text-align: justify;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+
+/* For feedbacks or suggestions */
+input[type="submit"] {
+display: block;
+  width: 1%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  min-width: 300px;
+}
+
+.container-txtarea {
+  width: 50vw;
+  margin: 0 auto;
+}

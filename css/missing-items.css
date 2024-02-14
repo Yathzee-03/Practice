@@ -1,23 +1,21 @@
-body {
-    background-color: black;
-}
 
-.text-white {
-    color: white;
-}
-
-.bg-blue{
-    background-color: blue;
+.bg-green{
+    background-color: #00A86b;
 }
 
 h1, h2, p {
     font-family: sans-serif;
-    color: white;
 }
 
 h1 {
     text-align: center;
 }
+
+.text-decor {
+    color:#00a86b;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-family: sans-serif;
+  }
 
 .container {
     border: 5px solid lightblue;
@@ -45,14 +43,12 @@ h1 {
 .image-wrapper img{
     height: 200px;
     width: 200px;
-    border: 2px solid lightblue
+    border: 2px solid lightblue;
 }
 
 img{
     margin-right: 15px;
-    border: 3px solid;
     border-radius: 8px;
-
 }
 
 img:hover {
@@ -77,4 +73,59 @@ border-radius: 6px;
 background: #4b4545d0;
 transition: color 0.5s fade-in;
 transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #00a86b;
+    padding: 25px 15px;
+    margin-top: 25px;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-item-1 {
+    width: 50%;
+}
+
+.footer-item-2 {
+    width: 50%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+footer p:first-child{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 23px;
+}
+
+footer p{
+    font-family: Tahoma;
+    font-size: 17px;
+    color: white;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 50%;
+    }
+    .mitem-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

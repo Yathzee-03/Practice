@@ -2,100 +2,110 @@
 <head>
     <meta charset="utf-8">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/item-form.css">
+    <link rel="icon" href="item-pictures/Logo1.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>Report Lost Items</title>
 
     <style>
-        h1 {
-            font-family: Impact;
-            text-align: center;
-        }
-        .form p, input{
-            text-align: left;
-            margin-left: 20px;
-        }
-
-        .move-left p{
-            margin-left: 22px;
-            margin-bottom: -3px;
-        }
-
-        .format {
-            background-color: #f0f0f0; 
-            margin-bottom: 15px; 
-            padding: 13px;
-            border-radius: 12px;
-        }
-
-        a { 
-        border-radius: 6px;
-        }
-
-        .response a:hover, a:active {
-        background: #4b4545d0;
-        transition: color 0.5s fade-in;
-        transform: scale(1.05);
-        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-green mb-3">
         <div class="container-fluid">
-            <a href="Landing Page.html" class="navbar-brand mb-0 h1" target="_parent">CCC Lost and Found</a>
-            <div class="response navbar-nav ml auto">
-                <a href="Missing Items.html" class="nav-item nav-link" target="_self">Missing Items</a>
-                <a href="Surrendered Items.html" class="nav-item nav-link" target="_self">Surrendered Items</a>
-                <a href="Report Lost Item.html" class="nav-item nav-link" target="_self">Report Lost Item</a>
-                <a href="Surrender Missing Item.html" class="nav-item nav-link" target="_self">Surrender Missing Item</a>
-                <a href="FAQs.html" class="nav-item nav-link" target="_self">About</a>
+          <a href="Landing Page.html" class="navbar-brand mb-0 h1" target="_parent">
+            <img src="item-pictures/Logo1.png" alt="FindIt" width="70" height="70">
+            FindIt Iskolar</a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav flex-wrap ms-md-auto mb-2">
+                <li class="nav-item">
+                  <a href="Missing Items.html" class="text-white nav-link" target="_self">Missing Items</a>
+                </li>
+                <li class="nav-item">
+                  <a href="Surrendered Items.html" class="text-white nav-link" target="_self">Surrendered Items</a>
+                </li>
+                <li class="nav-item">
+                  <a href="Report Lost Item.html" class="text-white nav-link" target="_self">Report Lost Item</a>
+                </li>
+                <li class="nav-item">
+                  <a href="Surrender Missing Item.html" class="text-white nav-link" target="_self">Surrender Found Item</a>
+                </li>
+              </ul>
             </div>
         </div>
-    </nav>
-    <h1>Lost or Retrieval Form</h1>
-    <div class="container" style="width: 75%;">
-        <div class="format move-left border border-black">
-            <div class="mb-3">
-                <label for="item" class="form-label"><p>Item</p></label>
-                <div class="input-group" style="width: 40%;">   
-                    <input class="form-control" id="item" name="item" type="text">
+      </nav>
+      <form action="">
+        <h1>REPORT LOST ITEM FORM</h1>
+        <p>Fill out the fields with correct information</p>
+        <fieldset>
+            <label for="" class="form-label">Item:
+                <input class="form-control" type="text" id="surrender-item" name="surrender-item" required >  
+            </label>
+            <label for="">Date Lost
+                <input class="form-control" type="date" id="surrender-date" name="surrender-date" value="" required>
+            </label>
+            <label for="">Place where item is lost:
+                <input class="form-control" type="text" id="surrender-place" name="surrender-place" required>
+            </label>
+            <label for="">Other description for the item (Optional):
+                <textarea class="form-control" name="surrender-description" id="surrender-description" cols="30" rows="3" placeholder="Other description"></textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <div class="container">
+                <div id="container-1">
+                    <label for="name">Name:
+                        <input class="form-control" type="text" id="name" name="name" placeholder="Name" required>
+                    </label>
+                </div>
+                <div id="container-2">
+                    <label for="contact-number">Contact Number 
+                        <input class="form-control" type="text" id="contact-details" name="contact-details" placeholder="Contact Number" required>
+                    </label>
                 </div>
             </div>
-            <div class="mb-3">
-                <label for="date" class="form-label"><p>Date Found</p></label>
-                <div class="input-group" style="width: 40%;">   
-                    <input class="form-control" id="date" name="date" type="text">
-                </div>
+            <label for="email">Email
+                <input class="form-control" type="email" id="email" name="email" placeholder="Email" required>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="">Item's Picture
+                <input class="form-control form-control-sm" id="formFileSm" type="file">
+            </label>
+        </fieldset>
+        <!-- Radio Buttons not to be used for now
+        <fieldset>
+            <div class="form-check" >
+                <input class="form-check-input" name="missing-surrender" type="radio" id="missingitem" checked>
+                <label class="form-check-label" for="missingitem">Missing Item</label>
             </div>
-            <div class="mb-3">
-                <label for="location" class="form-label"><p>Where did you find the Item?</p></label>
-                <div class="input-group" style="width: 40%;">
-                    <input class="form-control" id="location" name="location" type="text">
-                </div>
+            <div class="form-check">
+                <input class="form-check-input" name="missing-surrender" type="radio" id="SurrenderItem">
+                <label class="form-check-label" for="SurrenderItem">Surrender Item</label>
             </div>
-            <div class="mb-3" style="padding-left: 22px; padding-right: 22px;">
-                <label for="description">Description for the Item</label>
-                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="description" name="description"></textarea>
-                    <label for="floatingTextarea">Description</label>
-                </div>
-            </div>
-            <div class="mb-3" style="padding-left: 22px; padding-right: 22px;">
-                <label for="formFileSm" class="form-label" >Item Picture</label>
-                <input class="form-control form-control-sm" id="formFileSm" type="file" style="margin-left: 0px;" disabled>
-            </div>
+        </fieldset>
+        -->
+        <div class="gap-2 d-md-flex justify-content-md-end ">
+            <a href="#"><button type="button" class="btn btn-success">Submit</button></a>
         </div>
-        <div class="form-check" >
-            <input class="form-check-input" name="missing-surrender" type="radio" id="missingitem" checked>
-            <label class="form-check-label" for="missingitem">Missing Item</label>
+    </form>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-item-1">
+            <a href="Landing Page.html"><img src="item-pictures/Logo1.png" alt="logo" width="70" height="70"></a>
+            <a href="Landing Page.html"><p>FindIt Iskolar</p></a>
+            <p>Making lost and found simple and efficient</p>  
+          </div>
+          <div class="footer-item-2">
+            <a href="about.html">About</a>
+            <a href="FAQs.html" target="_self">FAQs</a>
+          </div>
         </div>
-        <div class="form-check">
-            <input class="form-check-input" name="missing-surrender" type="radio" id="SurrenderItem">
-            <label class="form-check-label" for="SurrenderItem">Surrender Item</label>
-        </div>
-        <div class="gap-2 d-md-flex justify-content-md-end">
-            <button type="button" class="btn btn-success">Submit</button>
-        </div>
-    </div>
-    
+        
+      </footer>
 
 </body>
 </html>

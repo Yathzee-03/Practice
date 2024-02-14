@@ -1,16 +1,22 @@
-body {
-    background-color: black;
-}
 
 .text-white {
     color: white;
 }
 
-.bg-blue{
-    background-color: blue;
+.bg-green{
+    background-color: #00A86b;
 }
 
-form h2,p {
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+form {
+    color: black;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+form h1, h2,p {
     text-align: center;
 }
 
@@ -29,6 +35,7 @@ textarea {
     width: 95%;
     border-radius: 6px;
     border: none;
+    margin-bottom: 20px;
 }
 
 form{
@@ -36,14 +43,19 @@ form{
     max-width: 800px;
     min-width: 400px;
     width: 80vw;
-    border: 1px solid black;
+    border: 1px solid #f2f2f2;
     padding: 30px;
     background-color: lightskyblue;
     font-weight: bold;
+    border-radius: 15px;
 }
 
 fieldset {
     border-top: 1px solid grey;
+}
+
+fieldset label:first-child{
+    padding-top: 15px;
 }
 
 button{
@@ -67,5 +79,53 @@ button{
 
 #container-2 {
     width: 43%;
+}
+
+/* Footer */
+footer {
+    background-color: #00a86b;
+    padding: 25px 15px;
+    margin-top: 25px;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-item-1 {
+    width: 50%;
+}
+
+.footer-item-1 p{
+    text-align: left;
+}
+
+.footer-item-2 {
+    width: 50%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+a p{
+    text-align: left;
+}
+    
+
+footer p:first-child{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 23px;
+}
+
+footer p{
+    font-family: Tahoma;
+    font-size: 17px;
+    color: white;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 

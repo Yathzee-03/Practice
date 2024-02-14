@@ -1,9 +1,12 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>FindIt Iskolar</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/landingpage.css" rel="stylesheet">
+    <link rel="icon" href="item-pictures/Logo1.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <style>
   h1, p {
@@ -19,31 +22,51 @@
   }
   
 </style>
-<body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-blue mb-3">
+<body class="image-link">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-green mb-3">
     <div class="container-fluid">
-      <a href="Landing Page.html" class="navbar-brand mb-0 h1" target="_parent">FindIt Iskolar</a>
-        <div class="response navbar-nav ml auto">
-          <a href="Missing Items.html" class="text-white nav-item nav-link" target="_self"><strong>Missing Items</strong></a>
-          <a href="Surrendered Items.html" class="text-white nav-item nav-link" target="_self"><strong>Surrendered Items</strong></a>
-          <a href="Report Lost Item.html" class="text-white nav-item nav-link" target="_self"><strong>Report Lost Item</strong></a>
-          <a href="Surrender Missing Item.html" class="text-white nav-item nav-link" target="_self"><strong>Surrender Missing Item</strong></a>
-          <a href="FAQs.html" class="nav-item nav-link" target="_self">About</a>
-         </div>
-     </div>
+      <a href="Landing Page.html" class="navbar-brand mb-0 h1" target="_parent">
+        <img src="item-pictures/Logo1.png" alt="FindIt" width="70" height="70">
+        FindIt Iskolar</a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav flex-wrap ms-md-auto mb-2">
+            <li class="nav-item">
+              <a href="Missing Items.html" class="text-white nav-link" target="_self">Missing Items</a>
+            </li>
+            <li class="nav-item">
+              <a href="Surrendered Items.html" class="text-white nav-link" target="_self">Surrendered Items</a>
+            </li>
+            <li class="nav-item">
+              <a href="Report Lost Item.html" class="text-white nav-link" target="_self">Report Lost Item</a>
+            </li>
+            <li class="nav-item">
+              <a href="Surrender Missing Item.html" class="text-white nav-link" target="_self">Surrender Found Item</a>
+            </li>
+          </ul>
+        </div>
+    </div>
   </nav>
     <!-- Section below contains two boxes which redirects to missing and surrendered items-->
     <section>
       <div class="container-l color-containerl">
         <div class="features light-green">
+          <div class="features-img-wrapper">
+            <img src="item-pictures/missing.png" alt="missing-items">
+          </div>
           <p>Found a missing item? Browse missing items and help your fellow students now</p>
-           <div class="center">
+            <div class="center">
               <a href="Missing Items.html" target="_self">
                 <button type="button" class="btn btn-success">Return a missing item now</button>
               </a>
             </div>
         </div>
           <div class="features light-green">
+            <div class="features-img-wrapper">
+              <img src="item-pictures/returns.png" alt="missing-items">
+            </div>
             <p>Lost an item? Find your missing item and claim it now. Browse the surrendered items</p>
             <div class="center">
               <a href="Surrendered Items.html" target="_self">
@@ -53,53 +76,107 @@
           </div> 
     
       </div>
-      <div class="description center text-white"><br><br>
+      <div class="descriptionss text-decor"><br><br>
           <h1>We are here to help you</h1>
-          <div>
-            <p>Discover a seamless way to reunite with your lost items. Our Lost and Found website connects you with what matters the most, making lost and found simple and efficient.</p>
-          </div>
+          <p>Discover a seamless way to reunite with your lost items. Our Lost and Found website connects you with what matters the most, making lost and found simple and efficient.</p>
       </div>
         
     </section>
 
     <section class="container-section">
-      <div class="container-s">
-        <div class="left">
-          <p>Notebook</p>
-          <p>Date found: Jan. 18, 2024</p>
-          <p>Location found: CCC View</p>
-          <p>Other description: Doesn't have a name.</p>
-        </div>
-      </div>
       <div class="container-msg">
-        <div class="container-s-right">
+        <div class="container-s">
+          <div class="left">
+            <p>Notebook</p>
+            <p>Date found: Jan. 18, 2024</p>
+            <p>Location found: CCC View</p>
+            <p>Other description: Doesn't have a name.</p>
+          </div>
+        </div>
+        <div class="container-s">
+          <div class="left">
             <p>Umbrella</p>
             <p>Date found: Jan. 16, 2024</p>
             <p>Location found: JMC Building</p>
             <p>Other description: None</p>
-        </div>
-      </div>
-        <div class="container-s">
-          <div class="left">
-            <p>Charger</p>
-            <p>Date found: Jan. 15, 2024</p>
-            <p>Location found: 1-CL1 on JMC Building</p>
-            <p>Other description: Type C plug</p>
           </div>
         </div>
+      </div>
+      <div class="container-msg">
+        <div class="container-s">
+          <div class="left">
+            <p>Cellphone</p>
+            <p>Date lost: Jan. 9, 2024</p>
+            <p>Location lost: CCC Admin Building</p>
+            <p>Other description: The cellphone's brand is Realme</p>
+          </div>
+        </div>
+        <div class="container-s">
+          <div class="left">
+            <p>Student ID</p>
+            <p>Date lost: Jan. 10, 2024</p>
+            <p>Location lost: CCC Admin Building</p>
+            <p>Other description: 2nd Year ComSci Student</p>
+          </div>
+        </div>
+      </div>
+        
     </section>
-    <!--Create a  good preview for the lost and found form-->  
-    <section>
-
-    </section>
+    <!--Create a  good preview for the lost and found form and explain the needed information-->  
+      <br><br>
+      <h1 class="text-decor">Report lost items or Surrender found items</h1>
+      <div class="container-form">
+        <div class="form-item-1">
+          <div class="features-img-wrapper">
+            <img src="item-pictures/HH.png" alt="">
+          </div>
+        </div>
+        <div class="form-item-2">
+          <div class="item center item-color">
+            Guide for answering the lost and found form
+          </div>
+          <div class="item">
+            <div class="item-icon">
+              <div class="icon-wrapper">
+                <img src="item-pictures/checked.png" alt="checked">
+              </div>
+            </div>
+            <div class="item-description">
+              Gather the missing or found item's information
+            </div>  
+          </div>
+          <div class="item">
+            <div class="item-icon">
+              <div class="icon-wrapper">
+                <img src="item-pictures/checked.png" alt="checked">
+              </div>
+            </div>
+            <div class="item-description">
+              Take the picture of the found item and for the missing item, if possible, upload the said item's picture
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-icon">
+              <div class="icon-wrapper">
+                <img src="item-pictures/checked.png" alt="checked">
+              </div>
+            </div>
+            <div class="item-description">
+              Personal information is also required such as the user's Full Name, Contact Number, and Email
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- Footer code -->
     <footer>
       <div class="footer-container">
         <div class="footer-item-1">
+          <a href="Landing Page.html"><img src="item-pictures/Logo1.png" alt="logo" width="70" height="70"></a>
           <a href="Landing Page.html"><p>FindIt Iskolar</p></a>
           <p>Making lost and found simple and efficient</p>  
         </div>
         <div class="footer-item-2">
-          <a href="#">About</a>
+          <a href="about.html">About</a>
           <a href="FAQs.html" target="_self">FAQs</a>
         </div>
       </div>
